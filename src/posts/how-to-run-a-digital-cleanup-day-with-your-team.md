@@ -1,7 +1,7 @@
 ---
 title: "How to Run a Digital Cleanup Day with Your Team"
 date: "2026-02-23T08:35:00.000Z"
-description: "A practical guide for nonprofits and small businesses to declutter websites, files, and tools in a single focused "digital cleanup" session."
+description: "A practical guide for nonprofits and small businesses to declutter websites, files, and tools in a single focused 'digital cleanup' session."
 ---
 
 Over time, every organization accumulates digital clutter: outdated pages, unused tools, messy folders, and duplicate documents. This makes it harder for staff, volunteers, and community members to find what they need.
