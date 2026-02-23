@@ -1,3 +1,5 @@
+export const runtime = "nodejs";
+
 import { notFound } from "next/navigation";
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
 import { marked } from "marked";
@@ -14,9 +16,10 @@ export default function BlogPostPage({ params }: { params: { slug?: string } }) 
     notFound();
   }
 
-  const post = getPostBySlug(slug);
-
-  if (!post) {
+  let post;
+  try {
+    post = getPostBySlug(slug);
+  } catch {
     notFound();
   }
 
