@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/posts";
 
 // Uses NEXT_PUBLIC_SITE_URL env variable set in Vercel dashboard
-// Fallback to vercel.app subdomain for local dev
+// Fallback to nafismahim.website in production
 const baseUrl =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://nafismahim.website";
 
