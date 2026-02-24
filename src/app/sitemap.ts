@@ -1,7 +1,10 @@
 import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/posts";
 
-const baseUrl = "https://blog-gules-one-81.vercel.app";
+// Uses NEXT_PUBLIC_SITE_URL env variable set in Vercel dashboard
+// Fallback to vercel.app subdomain for local dev
+const baseUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://nafismahim.website";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getAllPosts();
